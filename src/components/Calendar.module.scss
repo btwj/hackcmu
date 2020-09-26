@@ -1,0 +1,99 @@
+.calendar {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    height: 120%;
+    background: white;
+    display: flex;
+    padding: 1.5em 3em;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.times {
+    width: 4em;
+    display: flex;
+    padding-top: 2em;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-right: 1px solid #ddd;
+
+    span {
+        flex: 1 0 auto;
+        height: 2em;
+        border-top: 1px solid #ddd;
+        padding-top: 0.5em;
+    }
+}
+
+.calendarItems {
+    flex: 1 0 auto;
+    margin-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+
+    .dotw {
+        text-align: center;
+        font-weight: bold;
+        height: 2em;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .dayItems {
+        flex: 1 0 auto;
+        position: relative;
+
+        .wakeItem {
+            border-bottom: 1px dashed #aaa;
+            padding-bottom: 0.5em;
+            position: absolute;
+            width: 100%;
+            color: #888;
+            text-align: center;
+        }
+
+        .sleepItem {
+            border-top: 1px dashed #aaa;
+            padding-top: 0.5em;
+            position: absolute;
+            width: 100%;
+            color: #888;
+            text-align: center;
+        }
+
+        .item {
+            position: absolute;
+            padding: 0.3em;
+            background-color: grey;
+            border-radius: 5px;
+            box-sizing: border-box;
+            width: 100%;
+            font-size: 0.6em;
+            overflow: hidden;
+            
+            .timeInfo {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 0.9em;
+            }
+
+            .itemName {
+                font-weight: bold;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+
+.right {
+    flex: 10 0 auto;
+    display: flex;
+    &:first-child {
+        margin-left: 0;
+    }
+}

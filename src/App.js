@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Form from './components/Form.js';
+import Calendar from './components/Calendar.js';
+import { useInfoStore } from './stores/Info.js';
+import CalendarExplanation from './components/CalendarExplanation';
 
 function App() {
+  const calendarData = useInfoStore(state => state.calendarData);
+  const sleepTime = useInfoStore(state => state.sleepTime);
+  const wakeTime = useInfoStore(state => state.wakeTime);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Form />
+      <Calendar data={calendarData} wakeTime={wakeTime} sleepTime={sleepTime}/>
+      <CalendarExplanation />
     </div>
   );
 }

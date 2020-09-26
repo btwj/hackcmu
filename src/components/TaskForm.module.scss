@@ -1,0 +1,56 @@
+.input {
+    display: flex;
+
+    input {
+        flex: 1 0 auto;
+        padding: 0.5em;
+        font-size: 1em;
+        
+        outline: none;
+        border: 1px solid #ccc;
+        border-right: none;
+
+        &.inputName {
+            flex: 5 0 auto;
+            border-radius: 5px 0 0 5px;
+        }
+
+        &.inputHours {
+            border-radius: 0;
+            flex: 0 0 auto;
+        }
+    }
+
+    div {
+        padding: 0.5em 0.8em;
+        background: #00b894;
+        color: white;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+}
+
+
+.task {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 0.5em;
+    overflow: auto;
+
+    margin-bottom: 5px;
+
+    .delete {
+        float: left;
+        cursor: pointer;
+    }
+
+    .header {
+        float: left;
+        margin-left: 1em;
+    }
+
+    .timeInfo {
+        float: right;
+        text-align: right;
+    }
+}

@@ -1,0 +1,82 @@
+.input {
+    display: flex;
+
+    input {
+        flex: 1 0 auto;
+        padding: 0.5em;
+        font-size: 1em;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        border: 1px solid #ccc;
+        border-right: none;
+    }
+
+    div {
+        padding: 0.5em 0.8em;
+        background: #00b894;
+        color: white;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+}
+
+.selectedClass {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 0.5em;
+    overflow: auto;
+
+    margin-bottom: 5px;
+
+    .delete {
+        float: left;
+        cursor: pointer;
+    }
+
+    .classHeader {
+        float: left;
+        margin-left: 1em;
+        max-width: 400px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        .section {
+            margin-left: 0.5em;
+        }
+
+        .courseNumber {
+            font-weight: bold;
+        }
+
+        .dayTime {
+            margin-top: 3px;
+            font-weight: normal;
+        }
+
+        .courseName {
+            &:before {
+                content: "·";
+                font-weight: bold;
+                margin-right: 0.75em;
+            }
+            margin-left: 0.75em;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .timeInfo {
+        float: right;
+        text-align: right;
+
+        .extraTime {
+            margin-top: 3px;
+        }
+    }
+
+    .lecture {
+        font-size: 1em;
+        float: left;
+        margin-right: 1em;
+    }
+}

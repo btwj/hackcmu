@@ -1,0 +1,59 @@
+.explanation {
+    min-width: 500px;
+    max-width: 800px;
+    min-height: 100%;
+    background: #fff;
+    padding: 0px 100px 50px 100px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+    z-index: -10;
+    line-height: 1.5;
+    overflow: auto;
+
+    .header {
+        text-align: left;
+        max-width: 600px;
+        font-size: 1.2em;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        h1 {
+            font-weight: normal;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    .card {
+        box-sizing: content-box;
+        padding: 1em 0;
+        max-width: 600px;
+        border-top: 1px solid #eee;
+    
+        .cardHeader {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 0.5em;
+            margin-bottom: 0.2em;
+        }
+    
+        p {
+            max-width: 500px;
+            margin-top: 0;
+            font-size: 1em;
+            color: #666;
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    margin-top: 2em;
+    border-top: 1px solid #eee;
+    padding-top: 0;
+    color: #bbb;
+}
