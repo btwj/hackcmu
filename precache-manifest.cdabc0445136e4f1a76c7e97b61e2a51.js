@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef680e39ff8cef895c0919f4aa57b9bf",
+    "revision": "bb330e0cba156722fcbf3cdd6a4b40f8",
     "url": "/hackcmu/index.html"
   },
   {
-    "revision": "db853deb7a47fbcba183",
+    "revision": "0fcf1c483a3721968408",
     "url": "/hackcmu/static/css/main.3598422c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hackcmu/static/js/2.5aadb0ff.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "db853deb7a47fbcba183",
-    "url": "/hackcmu/static/js/main.30902950.chunk.js"
+    "revision": "0fcf1c483a3721968408",
+    "url": "/hackcmu/static/js/main.8c5401e1.chunk.js"
   },
   {
     "revision": "afcfb76384736a99fb87",
